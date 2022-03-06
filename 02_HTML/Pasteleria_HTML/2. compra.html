@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realiza tu Pedido: Vía Láctea | Pastelería</title>
+    <link rel="stylesheet" href="text.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="colors.css" />
+  </head>
+  <body>
+    <section class="header">
+      <img
+        src="/imagen/Logo_Via_Lactea.png"
+        alt="logo pastel neon"
+        style="width: 120px; height: 120px"
+      />
+
+      <h1 class="headerText">Pastelería Vía Láctea</h1>
+    </section>
+    <section>
+      <nav>
+        <ul>
+          <a href="1. homepage.html"><li>Inicio</li></a>
+          <a href="2. compra.html"><li>Arma tu Pastel</li></a>
+          <a href="3. carrito.html"><li>Carrito</li></a>
+          <a href="admin.html"><li>Admin</li></a>
+        </ul>
+      </nav>
+    </section>
+    <br />
+    <h2>Realizar pedido</h2>
+    <br />
+    <form action="action.js" id="pedido" method="post">
+      <h3>Crea tu Pastel</h3>
+      <b><label for="saborPastel">Elige tu sabor de pastel:</label></b
+      ><br />
+      <select name="saborPastel" id="saborPastel">
+        <option value="null">-</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="Fresa">Fresa</option>
+        <option value="Naranja">Naranja</option>
+        <option value="Limón">Limón</option>
+        <option value="Zanahoria">Zanahoria</option>
+      </select>
+      <br />
+      <br />
+      <b><label for="saborPastel">Combinar con otro sabor (opcional):</label></b
+      ><br />
+      <select name="saborPastel" id="saborPastel">
+        <option value="null">-</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="Fresa">Fresa</option>
+        <option value="Naranja">Naranja</option>
+        <option value="Limón">Limón</option>
+        <option value="Zanahoria">Zanahoria</option>
+      </select>
+      <br /><br />
+      <h3>Elegir decoraciones</h3>
+      <table>
+        <tr>
+          <th></th>
+          <th>Tipo</th>
+          <th>Precio</th>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="decoraciones" id="fresa" /></td>
+          <td>Fresas</td>
+          <td>$35.00</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="decoraciones" id="durazno" /></td>
+          <td>Durazno</td>
+          <td>$30.00</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="decoraciones" id="florales" /></td>
+          <td>Florales</td>
+          <td>$30.00</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="decoraciones" id="betun" /></td>
+          <td>Betun</td>
+          <td>$30.00</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="decoraciones" id="dripCake" /></td>
+          <td>Drip Cake</td>
+          <td>$80.00</td>
+        </tr>
+      </table>
+      <br />
+      <h3>Ingresa tu Información</h3>
+      <label for="nombreCliente">Nombre(s)</label><br />
+      <input type="text" id="nombreCliente" form="formPedido" /><br />
+      <label for="apellidosCliente">Apellidos</label><br />
+      <input type="text" id="apellidosCliente" form="formPedido" /><br />
+      <label for="telefonoCliente">Teléfono</label><br />
+      <input type="text" id="telefonoCliente" form="formPedido" /><br />
+      <label for="emailCliente">Correo electrónico</label><br />
+      <input type="text" id="emailCliente" form="formPedido" /><br />
+      <br />
+      <input type="submit" value="Agregar al carrito" />
+      <input type="reset" value="Reestablecer" />
+      <br />
+      <br />
+      <a href="1. homepage.html"><input type="button" value="Volver" /></a>
+      <br />
+      <br />
+    </form>
+    <footer class="footer">
+      Pastelería Vía Lactea <br />
+      Dirección: Calle Postres #123, Col. Sabores C.P. 00110<br />
+      Teléfono: (55) 5555 5555<br />
+      Horarios de Atención:<br />
+      Martes a Jueves de 10:30 a 18:00 hrs.<br />
+      Viernes a Domingo: 10:00 a 21:00 hrs.
+    </footer>
+  </body>
+</html>
