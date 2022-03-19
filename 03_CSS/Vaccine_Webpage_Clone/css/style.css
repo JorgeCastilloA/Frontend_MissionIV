@@ -1,0 +1,552 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*color*/
+body {
+  background: #fff;
+}
+
+.header,
+.tableSpace {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 2px 4px #00000077;
+}
+
+.hoaxButton,
+.submitButton {
+  background-color: rgb(24, 24, 196);
+  color: #fff;
+  box-shadow: 2px 2px 4px #00000077;
+}
+
+.header {
+  box-shadow: none;
+}
+/*shape*/
+
+* {
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: sticky;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  height: 50%;
+  z-index: 2;
+}
+.webTitle {
+  width: 35%;
+  height: 100%;
+  padding: min(20%, 1em);
+  padding-left: 5%;
+  padding-right: 0%;
+  color: rgb(24, 24, 196);
+  justify-items: flex-start;
+  font-size: max(2vw, 180%);
+}
+.navButtons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 55%;
+  height: 100%;
+  padding: min(1.5vw);
+  padding-right: 0%;
+  padding-left: 0%;
+}
+.ulButtons {
+  justify-content: center;
+  align-content: center;
+
+  width: 75%;
+  height: 100%;
+  padding-left: 0%;
+}
+
+button {
+  border-style: none;
+  border-radius: 10%;
+  width: 8em;
+  height: min(4rem);
+  color: rgb(109, 103, 103);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: min(1em);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.tableHead {
+  width: 100%;
+  padding-left: 5%;
+  margin: 0;
+  color: rgb(13, 13, 102);
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.webSubtitle1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30%;
+  width: 95%;
+  padding-left: max(5%);
+  color: rgb(13, 13, 102);
+  font-style: normal;
+  font-size: max(1.5vw, 1rem);
+  font-weight: bolder;
+}
+
+.webSubtitle {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: 30%;
+  margin-left: 5%;
+  margin-right: 0%;
+  color: rgb(13, 13, 102);
+  font-style: normal;
+  font-size: max(1.5vw, 1rem);
+  font-weight: bolder;
+}
+
+.firstContainer {
+  width: max(45%);
+  height: 100%;
+  margin-bottom: min(25%, 20vw);
+}
+
+#emSubtitle {
+  width: 60%;
+  font-size: max(5vw, 2rem);
+  padding-right: 5%;
+  padding-top: 10%;
+  padding-bottom: 3%;
+  margin: 0;
+}
+.reverseWebSubtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 30%;
+  color: rgb(13, 13, 102);
+  font-style: normal;
+  font-size: max(1.5vw, 1rem);
+  font-weight: bolder;
+}
+.prepContainer {
+  width: 35%;
+  height: 100%;
+}
+.descDirection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+h3 {
+  padding: 5%;
+  padding-left: 0%;
+}
+.description {
+  width: 75%;
+  color: rgb(109, 103, 103);
+  padding-bottom: 5%;
+  line-height: 150%;
+  font-size: min(3vw, 1.5rem);
+  text-align: justify;
+  font-weight: bold;
+}
+.firstContainer > .description {
+  width: 55%;
+  margin: 0;
+  padding-right: 5%;
+}
+.vaccineDescOne {
+  width: 40%;
+  color: rgb(109, 103, 103);
+  padding-bottom: 5%;
+  line-height: 150%;
+  font-size: min(3.5vw, 1.5rem);
+  font-weight: bold;
+}
+.vaccineDesc {
+  width: 85%;
+  color: rgb(109, 103, 103);
+  padding-bottom: 5%;
+  line-height: 150%;
+  font-size: min(3.5vw, 1.5rem);
+  text-align: justify;
+  font-weight: bold;
+}
+.iconSpace {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+  margin: 0;
+  height: max(25%, 3rem);
+  width: max(80%, 5rem);
+  color: rgb(13, 13, 102);
+  font-size: 85%;
+  font-weight: bold;
+}
+.iconSingle {
+  min-width: 45%;
+  max-width: 100%;
+  height: fit-content;
+  padding: 2%;
+}
+.yellowIcon {
+  padding: 1%;
+  border-radius: 10%;
+  float: left;
+  background-color: rgba(232, 230, 52, 0.25);
+  box-shadow: 2px 2px 4px #00000077;
+}
+
+.containerDoctor {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: min(50%);
+
+  height: min(750px, 50vw);
+  margin-bottom: 5%;
+  z-index: -1;
+  background-color: rgb(59, 90, 224);
+}
+.stockImage {
+  width: max(20vw, 250px);
+  height: min(35vw);
+  bottom: 0%;
+}
+.tableSpace {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5%;
+  min-height: fit-content;
+  width: fit-content;
+  max-width: 150%;
+  margin-left: 9%;
+  margin-right: 0;
+  z-index: 2;
+}
+.table {
+  min-width: fit-content;
+  max-width: 560px;
+  height: 100%;
+  align-content: flex-start;
+}
+.tableButton {
+  width: min(30%, fit-content);
+  height: 70px;
+}
+
+.scheduleTable {
+  min-width: fit-content;
+  max-width: 100%;
+
+  height: 60%;
+  bottom: 10%;
+  float: left;
+  padding: 5%;
+  z-index: 1;
+  color: rgb(13, 13, 102);
+  font-size: min(1.5rem, 4vw);
+}
+
+.submitButton {
+  height: min(50px, 10vw);
+  min-width: 80%;
+  max-width: 85%;
+  margin: 10%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: min(1.5rem, 4vw);
+  font-weight: normal;
+}
+th {
+  font-weight: normal;
+}
+td {
+  font-weight: bolder;
+  text-align: right;
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  padding: min(1.5vw);
+  padding-left: 5%;
+}
+.flexItem {
+  height: max(17em);
+  width: 100%;
+  border: 2px;
+  border-style: ridge;
+  border-radius: 3%;
+  border-color: rgb(109, 103, 103, 0.5);
+  margin: 1em;
+  font-size: min(3vw, 1.5rem);
+  color: rgb(109, 103, 103);
+}
+.flexItem img {
+  padding: 2%;
+  padding-top: 5%;
+}
+.flexItem p,
+h3 {
+  padding: 2%;
+}
+h3 {
+  padding-top: 4%;
+  color: rgb(13, 13, 102);
+}
+.flexMask {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  height: 80%;
+  max-width: fit-content;
+  z-index: -1;
+  background-color: rgb(59, 90, 224);
+}
+.maskImg {
+  width: 80%;
+  height: 100%;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  text-align: center;
+  margin-top: min(2em, 30vw);
+}
+.gridItem {
+  align-self: center;
+}
+.gridItem img {
+  height: 50%;
+  width: 50%;
+  filter: grayscale(100%);
+  opacity: 25%;
+}
+.webSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: safe;
+  width: 95%;
+  max-width: 95%;
+  height: 50em;
+  margin-left: max(5%);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: rgb(13, 13, 102);
+  font-style: normal;
+  font-size: max(1.5vw, 1rem);
+  font-weight: bolder;
+}
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  height: fit-content + 20vw;
+
+  padding-left: 1%;
+  color: rgb(13, 13, 102);
+  /*font-style: normal;
+  font-size: max(1.5vw, 1rem);
+  font-weight: bolder;*/
+}
+.contactContainer p {
+  height: fit-content;
+  width: 20%;
+}
+.gridContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  height: 100%;
+  min-width: 100%;
+}
+
+.contactItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: max(90%, fit-content);
+  max-width: max(90%, fit-content);
+
+  margin: 2%;
+  border: 3px;
+  border-style: solid;
+  border-radius: 3%;
+  border-color: rgb(109, 103, 103, 0.2);
+
+  background-color: #fff;
+  aspect-ratio: 1;
+}
+.flexIcon {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 30%;
+  margin: 5%;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: #fff;
+}
+.flexIcon img {
+  height: 50%;
+  width: 70%;
+  padding: 2%;
+  padding-right: none;
+  background-color: rgb(231, 231, 255);
+}
+
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  width: fit-content;
+  margin-top: 5%;
+}
+.contactInfo p {
+  width: 95%;
+  height: min(1.5rem, fi);
+
+  font-size: max(1rem, 1.5vw);
+}
+.contactButton {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  height: max(fit-content, 50%);
+  width: 90%;
+}
+.contactButton button {
+  height: max(75%, fit-content);
+  width: 75%;
+  font-size: min(2rem, 1.5vw);
+
+  background-color: rgb(231, 231, 255);
+  color: rgb(59, 90, 224);
+}
+.flexSyringe {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 40vw;
+  width: 45%;
+}
+.flexSyringe img {
+  width: 80%;
+  height: 80%;
+  padding: 5%;
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: rgb(59, 90, 224);
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: max(20vw, fit-content);
+  width: 100%;
+  background-color: rgb(231, 231, 255);
+}
+.footerContainer div {
+  width: 48%;
+  padding: 1%;
+}
+.footerContainer p {
+  width: 30%;
+  height: 25%;
+  padding: 5%;
+  padding-top: 0;
+  padding-left: 10%;
+  font-size: max(1.2em) 100%;
+  color: rgb(109, 103, 103);
+}
+.footerTitle {
+  width: 85%;
+  height: 25%;
+  padding: 5%;
+  padding-left: 10%;
+  padding-bottom: 1%;
+  color: rgb(24, 24, 196);
+  font-size: max(2vw, 1.8em);
+}
+
+.footerTable th {
+  width: 10%;
+  font-weight: bolder;
+  font-size: max(1.5vw, 1.2em);
+  color: rgb(24, 24, 196);
+}
+.footerTable td {
+  font-weight: lighter;
+  text-align: left;
+  align-self: flex-end;
+  color: rgb(109, 103, 103);
+}
+.footerTable tbody {
+  width: 75%;
+  height: 100%;
+}
+.footerTable {
+  justify-content: space-around;
+  text-align: left;
+  height: 90%;
+  width: 100%;
+  padding-top: 5%;
+}
+.infoFooterR,
+.infoFooterL {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  width: 45%;
+  padding: 1%;
+}
+.infoFooterR {
+  justify-content: flex-end;
+}
+.infoFooterR p {
+  width: fit-content;
+  height: fit-content;
+  padding: 1%;
+  font-size: max(1.2em) 100%;
+  color: rgb(109, 103, 103);
+}
+.infoFooterL p {
+  width: fit-content;
+  height: fit-content;
+
+  padding: 1%;
+  font-size: max(1.2em) 100%;
+  color: rgb(109, 103, 103);
+}
