@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex | LaunchX</title>
+    <link rel="stylesheet" href="pokeStyle.css  " />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 class="title">Pokedex!</h1>
+    <div class="pokemonContainer">
+      <div class="searchBar">
+        <input
+          type="text"
+          placeholder="Enter Pokemon Name"
+          id="pokeSearch"
+          name="pokeSearch"
+          class="pokeSearch"
+        />
+        <button onclick="fetchPokemon()" class="searchButton">Search</button>
+      </div>
+      <div id="imageSpace">
+        <img src="/pokedex/images/pokeball.png" alt="pokemon" id="pokeImg" />
+      </div>
+      <div id="pokeName"></div>
+    </div>
+
+    <div class="dataId"></div>
+
+    <div class="statsContainer">
+      <table class="pokeTable">
+        <tr>
+          <th>Pokemon Number</th>
+          <td id="pokeNum"></td>
+        </tr>
+        <tr>
+          <th>Type</th>
+          <td id="pokeType"></td>
+        </tr>
+
+        <tr>
+          <th>Height</th>
+          <td id="pokeHei"></td>
+        </tr>
+
+        <tr>
+          <th>Weight</th>
+          <td id="pokeWei"></td>
+        </tr>
+
+        <tr>
+          <th>Ability 1</th>
+          <td id="pokeAbi1"></td>
+        </tr>
+
+        <tr>
+          <th>Ability 2</th>
+          <td id="pokeAbi2"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <footer>
+    <script src="/pokedex/pokedexv2.js"></script>
+  </footer>
+</html>
